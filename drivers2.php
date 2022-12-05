@@ -15,7 +15,7 @@ if ($conn->connect_error) {
   ?>
   <?php  
  
-$sql = "SELECT Driver.DriverID, Driver.DriverName, Driver.Team, Driver.LastRaceWon, count(2022Races.WinningDriverID) as NumberOfRacesWonIn2022 from Driver join 2022Races ON Driver.DriverID = 2022Races.WinningDriverID group by Driver.DriverID, Driver.DriverName, Driver.Team, Driver.LastRaceWon";
+$sql = "SELECT DriverID, DriverName, Team, LastRaceWon, count(2022Races.WinningDriverID) as NumberOfRacesWonIn2022 from Driver join 2022Races ON Driver.DriverID = 2022Races.WinningDriverID group by DriverID, DriverName, Team, LastRaceWon";
 $result2 = $conn->query($sql);
 
 if ($result2->num_rows > 0) {
@@ -28,7 +28,7 @@ if ($result2->num_rows > 0) {
       <p class="card-text"><ul>
 <?php
   
-    echo "<li>-Driver ID: " . $row["Driver.DriverID"]. "</li><li>- Driver Name: " . $row["Driver.DriverName"]. "</li><li>- Team: " . $row["Driver.Team"]. "</li><li>- Last Race Won: " .  $row["Driver.LastRaceWon"]. "</li><li>- Races Won in 2022: " .  $row["NumberOfRacesWonIn2022"]. "</li>";
+    echo "<li>-Driver ID: " . $row["DriverID"]. "</li><li>- Driver Name: " . $row["DriverName"]. "</li><li>- Team: " . $row["Team"]. "</li><li>- Last Race Won: " .  $row["LastRaceWon"]. "</li><li>- Races Won in 2022: " .  $row["NumberOfRacesWonIn2022"]. "</li>";
    ?>
       <br>
          </ul></p>
