@@ -89,35 +89,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
             </p>
  
              
-<p>
-               <label for="productName">Product Name:</label>
-               <input type="text" name="productname" id="productName">
-            </p>
- <p>
-               <label for="productID">Product ID:</label>
-               <input type="text" name="productid" id="productID">
-            </p>
- <p>
-               <label for="shipping">Shipping Fee:</label>
-               <input type="text" name="shipping" id="shipping">
-            </p>
-    <p>
-               <label for="tax">Tax Fee:</label>
-               <input type="text" name="tax" id="tax">
-            </p>        
-         <p>
-               <label for="quantity">Quantity:</label>
-               <input type="text" name="quantity" id="quantity">
-            </p>         
-              <p>
-               <label for="saleid">Sale ID:</label>
-               <input type="text" name="saleid" id="saleid">
-            </p>  
-              <p>
-               <label for="saleprice">Sale Price:</label>
-               <input type="text" name="saleprice" id="saleprice">
-            </p>  
-            <input type="submit" value="Submit">
+
          </form>
      </div>
            
