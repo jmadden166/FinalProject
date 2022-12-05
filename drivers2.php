@@ -15,7 +15,7 @@ if ($conn->connect_error) {
   ?>
   <?php  
  
-$sql = "SELECT Driver.DriverID, Driver.DriverName, Driver.Team, Driver.LastRaceWon, count(2022Races.WinningDriverID) as NumberOfRacesWonIn2022 from Driver join Driver.DriverID = 2022Races.WinningDriverID";
+$sql = "SELECT Driver.DriverID, Driver.DriverName, Driver.Team, Driver.LastRaceWon, count(2022Races.WinningDriverID) as NumberOfRacesWonIn2022 from Driver join 2022Races ON Driver.DriverID = 2022Races.WinningDriverID group by Driver.DriverID, Driver.DriverName, Driver.Team, Driver.LastRaceWon";
 $result2 = $conn->query($sql);
 
 if ($result2->num_rows > 0) {
