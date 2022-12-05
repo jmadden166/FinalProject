@@ -9,5 +9,6 @@
     <body>
     <h1>Current Driver Lineup</h1>
 <?php include 'drivers2.php'; ?>
+<?php include 'insert2.php'; ?>      
   </body>
   </html>
