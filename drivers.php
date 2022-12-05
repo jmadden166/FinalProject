@@ -6,7 +6,7 @@
     <title>2022 Race Winners</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
-    <body>
+    
     <h1>Current Driver Lineup</h1>
          <div class="dropdown">
         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -21,6 +21,7 @@
           <li><a class="dropdown-item" href="admin.php">Admin Window</a></li>
         </ul>
     </div>
+  <body>
 <?php include 'drivers2.php'; ?>
 <?php include 'insert2.php'; ?>      
   </body>
