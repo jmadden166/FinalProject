@@ -28,7 +28,7 @@ if ($result2->num_rows > 0) {
       <p class="card-text"><ul>
 <?php
   
-    echo "<<li>- Team: " . $row["Team"]. "</li><li>- Last Race Won: " .  $row["LastRaceWon"]. "</li><li>- Races Won in 2022: " .  $row["NumberOfRacesWonIn2022"]. "</li>";
+    echo "<li>- Team: " . $row["Team"]. "</li><li>- Last Race Won: " .  $row["LastRaceWon"]. "</li><li>- Races Won in 2022: " .  $row["NumberOfRacesWonIn2022"]. "</li>";
    ?>
       <br>
          </ul></p>
