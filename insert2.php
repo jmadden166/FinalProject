@@ -61,7 +61,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
    </head>
    <body>
       <center>
-         <button class="open-button" onclick="openForm()">Open Form</button>
+         <button class="open-button" onclick="openForm()">Add a New Driver</button>
 <div class="form-popup" id="myForm">
          <form action="insert.php" method="post">
              
