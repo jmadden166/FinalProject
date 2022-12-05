@@ -1,9 +1,21 @@
 <!doctype html>
 <html lang="en">
+  $servername = "localhost";
+$username = "jackstra_Homework3";
+$password = "+JMx3n7)k+!H";
+$dbname = "jackstra_final";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+  ?>
   <?php  
  
 $sql = "SELECT * from Driver";
-$result2 = $conn->query($sql1);
+$result2 = $conn->query($sql);
 
 if ($result2->num_rows > 0) {
   // output data of each row
