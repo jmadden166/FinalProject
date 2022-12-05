@@ -29,27 +29,22 @@
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	}).addTo(map);
 
-	const marker = L.marker([51.5, -0.09]).addTo(map)
+	const marker = L.marker([26.0325,50.510556]).addTo(map)
+		.bindPopup('<b>Bahrain Grand Prix</b><br />Bahrain International Circuit').openPopup();
+	const marker1 = L.marker([-37.849722, 144.968333]).addTo(map)
+		.bindPopup('<b>Australian Grand Prix</b><br />Albert Park Circuit').openPopup();
+	const marker2 = L.marker([51.5, -0.09]).addTo(map)
 		.bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
-
-	const circle = L.circle([51.508, -0.11], {
-		color: 'red',
-		fillColor: '#f03',
-		fillOpacity: 0.5,
-		radius: 500
-	}).addTo(map).bindPopup('I am a circle.');
-
-	const polygon = L.polygon([
-		[51.509, -0.08],
-		[51.503, -0.06],
-		[51.51, -0.047]
-	]).addTo(map).bindPopup('I am a polygon.');
-
-
-	const popup = L.popup()
-		.setLatLng([51.513, -0.09])
-		.setContent('I am a standalone popup.')
-		.openOn(map);
+	const marker3 = L.marker([51.5, -0.09]).addTo(map)
+		.bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
+	const marker4 = L.marker([51.5, -0.09]).addTo(map)
+		.bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
+	const marker5 = L.marker([51.5, -0.09]).addTo(map)
+		.bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
+	const marker6 = L.marker([51.5, -0.09]).addTo(map)
+		.bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
+	const marker7 = L.marker([51.5, -0.09]).addTo(map)
+		.bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
 
 	function onMapClick(e) {
 		popup
