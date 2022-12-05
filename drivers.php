@@ -35,9 +35,9 @@ if ($result->num_rows > 0) {
       <p class="card-text"><ul>
 <?php
 
-    echo "<li>-Driver ID: " . $row["ID"]. "</li><li>- Driver Name: " . $row["Driver Name"]. "</li><li>- Team: " . $row["Team"]. "</li><li>- Last Race Won: " .  $row["Last Race Won"]. "</li>";
+    echo "<li>-Driver ID: " . $row["DriverID"]. "</li><li>- Driver Name: " . $row["Driver Name"]. "</li><li>- Team: " . $row["Team"]. "</li><li>- Last Race Won: " .  $row["Last Race Won"]. "</li>";
    ?>
-       <br>
+      <br>
          </ul></p>
   </div>
     </div>
