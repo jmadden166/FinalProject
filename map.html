@@ -22,7 +22,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 <script>
 
-	const map = L.map('map').setView([100,100], 1300);
+	const map = L.map('map').setView([100,100], 10);
 
 	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
@@ -30,15 +30,15 @@
 	}).addTo(map);
 
 	const marker = L.marker([26.0325,50.510556]).addTo(map)
-		.bindPopup('<b>Bahrain Grand Prix</b><br />Bahrain International Circuit').openPopup();
+		.bindPopup('<b>Bahrain Grand Prix</b><br />Bahrain International Circuit, Sakhir').openPopup();
 	const marker1 = L.marker([-37.849722, 144.968333]).addTo(map)
-		.bindPopup('<b>Australian Grand Prix</b><br />Albert Park Circuit').openPopup();
-	const marker2 = L.marker([51.5, -0.09]).addTo(map)
-		.bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
-	const marker3 = L.marker([51.5, -0.09]).addTo(map)
-		.bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
-	const marker4 = L.marker([51.5, -0.09]).addTo(map)
-		.bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
+		.bindPopup('<b>Australian Grand Prix</b><br />Albert Park Circuit, Melbourne').openPopup();
+	const marker2 = L.marker([43.734722,7.420556]).addTo(map)
+		.bindPopup('<b>Monaco Grand Prix</b><br />Circuit de Monte Carlo, Monaco').openPopup();
+	const marker3 = L.marker([45.505833,-73.526667]).addTo(map)
+		.bindPopup('<b>Canadian Grand Prix</b><br />Circuit Gilles-Villeneuve, Montreal').openPopup();
+	const marker4 = L.marker([52.071,-1.016]).addTo(map)
+		.bindPopup('<b>British Grand Prix</b><br />Silverstone Circuit, Towcester').openPopup();
 	const marker5 = L.marker([51.5, -0.09]).addTo(map)
 		.bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
 	const marker6 = L.marker([51.5, -0.09]).addTo(map)
