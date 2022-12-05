@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+  <?php
   $servername = "localhost";
 $username = "jackstra_Homework3";
 $password = "+JMx3n7)k+!H";
