@@ -37,6 +37,7 @@ if ($result->num_rows > 0) {
 
     echo "<li>-Driver ID: " . $row["ID"]. "</li><li>- Driver Name: " . $row["Driver Name"]. "</li><li>- Team: " . $row["Team"]. "</li><li>- Last Race Won: " .  $row["Last Race Won"]. "</li>";
    ?>
+       <br>
          </ul></p>
   </div>
     </div>
