@@ -88,7 +88,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
                <input type="text" name="LastRace" id="LastRace">
             </p>
  
-             
+              <input type="submit" value="Submit">
 
          </form>
      </div>
