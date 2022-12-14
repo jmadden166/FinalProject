@@ -3,14 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JavaScript</title>
+    <title>Race Locations</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
      crossorigin=""/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	  <style>
+h1 {
+  text-align: center;
+}
+</style>
   <body>
-	  <h1>Race Locations</h1>
+	  <h1>2022 Race Locations</h1>
  <div id="map" style="width: 600px; height: 400px;"></div>
 	  <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
 
@@ -58,13 +63,23 @@
 	const marker13 = L.marker([30.1346, 97.6359]).addTo(map)
 		.bindPopup('<b>United States Grand Prix</b><br />Circuit of the Americas, Austin').openPopup();
 	const marker14 = L.marker([19.4055, 99.0926]).addTo(map)
-		.bindPopup('<b>Mexican Grand Prix</b><br />Circuit of the Americas, Austin').openPopup();
+		.bindPopup('<b>Mexican Grand Prix</b><br />Autódromo Hermanos Rodríguez, Mexico City').openPopup();
 	const marker15 = L.marker([-23.703611,-46.699722]).addTo(map)
-		.bindPopup('<b>Brazilian Grand Prix</b><br />Circuit of the Americas, Austin').openPopup();
+		.bindPopup('<b>Brazilian Grand Prix</b><br />Autódromo José Carlos Pace, Interlagos').openPopup();
 	const marker16 = L.marker([24.467222,54.603056]).addTo(map)
-		.bindPopup('<b>Abu Dhabi Grand Prix</b><br />Circuit of the Americas, Austin').openPopup();
-	
-	
+		.bindPopup('<b>Abu Dhabi Grand Prix</b><br />Yas Marina Circuit').openPopup();
+	const marker17 = L.marker([21.6370, 39.1030]).addTo(map)
+		.bindPopup('<b>Saudi Arabian Grand Prix</b><br />Jeddah Corniche Circuit, Jeddah').openPopup();
+	const marker18 = L.marker([44.3443, 11.7195]).addTo(map)
+		.bindPopup('<b>Emilia Romagna Grand Prix</b><br />Autodromo Enzo e Dino Ferrari, Imola').openPopup();
+	const marker19 = L.marker([25.9569, 80.2314]).addTo(map)
+		.bindPopup('<b>Miami Grand Prix</b><br />Miami International Autodrome, Miami Gardens').openPopup();
+	const marker20 = L.marker([41.5685, 2.2573]).addTo(map)
+		.bindPopup('<b>Spanish Grand Prix</b><br />Circuit de Barcelona-Catalunya, Barcelona').openPopup();
+	const marker21 = L.marker([40.3729, 49.8532]).addTo(map)
+		.bindPopup('<b>Azerbaijan Grand Prix</b><br />Baku City Circuit, Baku').openPopup();
+	const marker22 = L.marker([52.3877, 4.5442]).addTo(map)
+		.bindPopup('<b>Dutch Grand Prix</b><br />Circuit Zandvoort, Zandvoort').openPopup();
 	function onMapClick(e) {
 		popup
 			.setLatLng(e.latlng)
