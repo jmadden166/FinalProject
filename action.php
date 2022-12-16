@@ -3,7 +3,14 @@
    <left>
         <a href="index.html">Return to the Home Page</a> 
      </left>
-
+<style>
+   img {
+    float: left;
+    width:  700px;
+    height: 800px;
+    object-fit: cover;
+}
+   </style>
   <?php
   $servername = "localhost";
 $username = "jackstra_Homework3";
