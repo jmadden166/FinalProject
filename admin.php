@@ -38,8 +38,21 @@ body {font-family: Arial, Helvetica, sans-serif;}
   border: 3px solid #f1f1f1;
   z-index: 9;
 }
+  .form-popup2 {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
 /* Add styles to the form container */
 .form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+  .form-container2 {
   max-width: 300px;
   padding: 10px;
   background-color: white;
@@ -52,8 +65,19 @@ body {font-family: Arial, Helvetica, sans-serif;}
   border: none;
   background: #f1f1f1;
 }
+  .form-container2 input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
 /* When the inputs get focus, do something */
 .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+  .form-container2 input[type=text]:focus, .form-container input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
@@ -68,12 +92,28 @@ body {font-family: Arial, Helvetica, sans-serif;}
   margin-bottom:10px;
   opacity: 0.8;
 }
+  .form-container2 .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
 /* Add a red background color to the cancel button */
 .form-container .cancel {
   background-color: red;
 }
+  .form-container2 .cancel {
+  background-color: red;
+}
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+  .form-container2 .btn:hover, .open-button:hover {
   opacity: 1;
 }
 </style>
@@ -111,6 +151,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <input type="submit" value="Submit">
             </form>
              </div>
+          <form>
+             <div>
+          <button class="open-button2" onclick="openForm()">Update Driver Information</button>
+<div class="form-popup2" id="myForm">  
    
          <form action="edit2.php" method="post">
              
