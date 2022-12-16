@@ -19,9 +19,7 @@ $sql = "SELECT DriverID, DriverName, Team, LastRaceWon from Driver Where Team = 
 $result2 = $conn->query($sql);
 
         if(mysqli_query($conn, $sql)){
-            echo "<h3>Driver data stored in a database successfully."
-                . " Please browse your localhost php my admin"
-                . " to view the updated data</h3>";
+            echo "<li>- Team: " . $row["Team"]. "</li><li>- Last Race Won: " .  $row["LastRaceWon"]. "</li><li>- Races Won in 2022: " .  $row["NumberOfRacesWonIn2022"]. "</li>";
 
         } else{
             echo "ERROR: Hush! Sorry $sql. "
