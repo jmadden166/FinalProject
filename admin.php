@@ -108,7 +108,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
             </form>
              </div>
  
-          <button class="open-button2" onclick="openForm()">Update Driver Information</button>
+        
 <div class="form-popup2" id="myForm">  
    
          <form action="edit2.php" method="post">
