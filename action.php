@@ -33,7 +33,7 @@ if ($result2->num_rows > 0) {
       <p class="card-text"><ul>
 <?php
   
-    echo "<li>- Team: " . $row["Team"]. "</li><li>- Last Race Won: " .  $row["LastRaceWon"]. "</li>";
+    echo "<li>Team: " . $row["Team"]. "</li><li>Last Race Won: " .  $row["LastRaceWon"]. "</li>";
    ?>
       <br>
          </ul></p>
