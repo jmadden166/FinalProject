@@ -24,11 +24,11 @@ $conn = new mysqli($servername, $username, $password, $dbname);
          
        
         $driveid =  $_POST['DriverID'];
-        $driver_name = $_POST['Driver Name'];
-        $driver_team =  $_POST['Driver Team'];
+        $driver_name = $_POST['DriveName'];
+        $driver_team =  $_POST['DriveTeam'];
         $lastRace = $_POST['LastRace'];
         
-        $sql = "INSERT INTO Driver (Driver ID, Driver Name, Team, Last Race Won) VALUES ('$driveid',
+        $sql = "INSERT INTO Driver (DriverID, DriverName, Team, LastRaceWon) VALUES ('$driveid',
             '$driver_name', '$driver_team','$lastRace')";
          
         if(mysqli_query($conn, $sql)){
