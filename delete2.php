@@ -12,7 +12,7 @@
         $servername = "localhost";
 $username = "jackstra_Homework3";
 $password = "+JMx3n7)k+!H";
-$dbname = "jackstra_Homework4";
+$dbname = "jackstra_final";
         $conn = mysqli_connect("localhost", "jackstra_Homework3", "+JMx3n7)k+!H", "jackstra_Homework4");
          
         // Check connection
@@ -26,7 +26,7 @@ $dbname = "jackstra_Homework4";
         $first = $_POST['Delete1'];
         $race1 = $_POST['Delete4'];
         
-        $sql5 = "Delete FROM Customer Where DriverID = ('$first')";
+        $sql5 = "Delete FROM Driver Where DriverID = ('$first')";
          $sql6 = "Delete From 2022Races Where RaceID = ('$race1')";
          $sql7 = "Delete FROM Image Where DriverID = ('$first')";
          
