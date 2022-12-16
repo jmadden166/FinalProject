@@ -125,18 +125,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
                <input type="text" name="Delete1" id="Delete1">
             </p>
  <p>
-               <label for="Delete2">What do you wish to change this driver's name to?:</label>
-               <input type="text" name="Delete2" id="Delete2">
-            </p>
-             
- 
-             
-<p>
-               <label for="Delete3">What team does this driver drive for?:</label>
-               <input type="text" name="Delete3" id="Delete3">
-            </p>
- <p>
-               <label for="Delete4">What was the last race this driver won?: </label>
+               <label for="Delete2">Delete a Race with this ID: </label>
                <input type="text" name="Delete4" id="Delete4">
             </p>
              
