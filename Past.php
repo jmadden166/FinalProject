@@ -15,7 +15,7 @@ body {
 }
 
   </style>
-    <h1>Upcoming Races</h1>
+    <h1>Race Results</h1>
 <a href="index.html">Return to the Home Page</a> 
   <br>
   <center>
