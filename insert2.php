@@ -72,14 +72,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
  
              
 <p>
-               <label for="Driver Name">Driver Name:</label>
-               <input type="text" name="Driver Name" id="Driver Name">
+               <label for="DriveName">Driver Name:</label>
+               <input type="text" name="DriveName" id="DriveName">
             </p>
  
              
 <p>
-               <label for="Driver Team">Driver Team:</label>
-               <input type="text" name="Driver Team" id="Driver Team">
+               <label for="DriveTeam">Driver Team:</label>
+               <input type="text" name="DriveTeam" id="DriveTeam">
             </p>
  
              
