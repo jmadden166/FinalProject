@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
   ?>
   <?php  
- $help =  $_POST['Team1']
+ $help =  $_POST['Team1'];
 $sql = "SELECT DriverID, DriverName, Team, LastRaceWon from Driver where Team =  ('$help') Group by Team";
 $result2 = $conn->query($sql);
 
