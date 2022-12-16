@@ -22,6 +22,7 @@ if ($result2->num_rows > 0) {
   // output data of each row
   while($row = $result2->fetch_assoc()) {
     ?>
+  <h1><center><?=$row["Team"]?></h1></center>
      <div class="card">
     <div class="card-body">
       <h5 class="card-title"><?=$row["DriverName"]?></h5>
