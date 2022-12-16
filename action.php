@@ -37,7 +37,7 @@ if ($result2->num_rows > 0) {
   <?php  
   }
 } else {
-  echo "0 results";
+  echo "No results found";
 }
 $conn->close();
 ?>
