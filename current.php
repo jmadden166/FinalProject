@@ -9,8 +9,8 @@
      </left>
 <center>
   <form method="post" action="action.php">
-  <label for="Team">Choose a Team:</label>
-  <select name="Team" id="Team">
+  <label for="Team1">Choose a Team:</label>
+  <select name="Team1" id="Team1">
     <option value="Red Bull Racing">Red Bull Racing</option>
     <option value="Ferrari">Ferrari</option>
     <option value="Mercedes">Mercedes</option>
