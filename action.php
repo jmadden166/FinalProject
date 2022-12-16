@@ -1,5 +1,8 @@
 <!doctype html>
 <html lang="en">
+   <left>
+        <a href="index.html">Return to the Home Page</a> 
+     </left>
   <?php
   $servername = "localhost";
 $username = "jackstra_Homework3";
