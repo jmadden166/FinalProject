@@ -97,7 +97,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
                <input type="text" name="lastrace2" id="lastrace2">
             </p>
              
-
+<input type="submit" value="Submit">
                            
          </form>
              </div>
