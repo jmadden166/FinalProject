@@ -26,8 +26,8 @@ $dbname = "jackstra_final";
        
         $id1 =  $_POST['ID1'];
         $first2 = $_POST['newname2'];
-      $manName =  $_POST['team2'];
-        $manufacturer2 = $_POST['lastrace2'];
+      $team2 =  $_POST['team2'];
+        $lastrace2 = $_POST['lastrace2'];
   
       
         $sql5 = "Update Driver Set DriverName = ('$first2'), Team = ('$team2'), LastRaceWon = ('$lastrace2') Where DriverID = ('$id1')";
