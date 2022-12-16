@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+<center>
 <h1>Drivers for Team for the 2022 Season</h1>
 
 
@@ -25,6 +25,7 @@
 
 <p>Click the "Submit" button and get the Drivers for that Team</p>
 <?php include 'insert2.php'; ?>   
+  </center>
 </body>
 </html>
 
