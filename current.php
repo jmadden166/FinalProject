@@ -3,8 +3,11 @@
 <body>
 <center>
 <h1>Drivers by Team for the 2022 Season</h1>
-
-
+  </center>
+ <left>
+        <a href="index.html">Return to the Home Page</a> 
+     </left>
+<center>
   <form method="post" action="action.php">
   <label for="Team">Choose a Team:</label>
   <select name="Team" id="Team">
