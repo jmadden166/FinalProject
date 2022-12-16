@@ -83,7 +83,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
         <a href="index.html">Return to the Home Page</a> 
      </left>
        <center>
-        <h2>Delete Database</h2>
+        <h2>Delete Driver from Database</h2>
          <button class="open-button" onclick="openForm()">Update Driver Information</button>
 <div class="form-popup" id="myForm">
          <form action="edit2.php" method="post">
@@ -114,31 +114,30 @@ body {font-family: Arial, Helvetica, sans-serif;}
             </form>
              </div>
  
-        
-<div class="form-popup2" id="myForm">  
+
    
-         <form action="edit2.php" method="post">
+<form action="delete2.php" method="post">
              
  
              
 <p>
-               <label for="ID1">Update a driver with this ID:</label>
-               <input type="text" name="ID1" id="ID1">
+               <label for="Delete1">Delete a driver with this ID:</label>
+               <input type="text" name="Delete1" id="Delete1">
             </p>
  <p>
-               <label for="newname2">What do you wish to change this driver's name to?:</label>
-               <input type="text" name="newname2" id="newname2">
+               <label for="Delete2">What do you wish to change this driver's name to?:</label>
+               <input type="text" name="Delete2" id="Delete2">
             </p>
              
  
              
 <p>
-               <label for="team2">What team does this driver drive for?:</label>
-               <input type="text" name="team2" id="team2">
+               <label for="Delete3">What team does this driver drive for?:</label>
+               <input type="text" name="Delete3" id="Delete3">
             </p>
  <p>
-               <label for="lastrace2">What was the last race this driver won?: </label>
-               <input type="text" name="lastrace2" id="lastrace2">
+               <label for="Delete4">What was the last race this driver won?: </label>
+               <input type="text" name="Delete4" id="Delete4">
             </p>
              
 <input type="submit" value="Submit">                        
