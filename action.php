@@ -34,7 +34,7 @@ if ($result2->num_rows > 0) {
       <p class="card-text"><ul>
 <?php
   $url = $row["ImageLink"];
-    echo "<li>Team: " . $row["Team"]. "</li><li>Last Race Won: " .  $row["LastRaceWon"]. "</li><li>Driver Image: " ?><img src="<?php echo $url; ?>" />   "</li>";
+    echo "<li>Team: " . $row["Team"]. "</li><li>Last Race Won: " .  $row["LastRaceWon"]. "</li><li>Driver Image: " ?><img src="<?php echo $url; ?>" />  </li>";
    
        
 
