@@ -17,6 +17,18 @@ body {font-family: Arial, Helvetica, sans-serif;}
   right: 28px;
   width: 280px;
 }
+  .open-button2 {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  left: 28px;
+  width: 280px;
+}
 /* The popup form - hidden by default */
 .form-popup {
   display: none;
@@ -97,7 +109,33 @@ body {font-family: Arial, Helvetica, sans-serif;}
             </p>
              
 <input type="submit" value="Submit">
-                           
+    <button class="open-button2" onclick="openForm()">Delete a Driver</button>
+<div class="form-popup" id="myForm">
+         <form action="edit2.php" method="post">
+             
+ 
+             
+<p>
+               <label for="ID1">Update a driver with this ID:</label>
+               <input type="text" name="ID1" id="ID1">
+            </p>
+ <p>
+               <label for="newname2">What do you wish to change this driver's name to?:</label>
+               <input type="text" name="newname2" id="newname2">
+            </p>
+             
+ 
+             
+<p>
+               <label for="team2">What team does this driver drive for?:</label>
+               <input type="text" name="team2" id="team2">
+            </p>
+ <p>
+               <label for="lastrace2">What was the last race this driver won?: </label>
+               <input type="text" name="lastrace2" id="lastrace2">
+            </p>
+             
+<input type="submit" value="Submit">                        
          </form>
              </div>
          
