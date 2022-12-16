@@ -5,9 +5,9 @@
      </left>
    <style>
 img {
-    float: left;
-    width:  100px;
-    height: 100px;
+    float: center;
+    width:  400px;
+    height: 400px;
     object-fit: cover;
 }
    </style>
