@@ -28,7 +28,7 @@
 
 <p>Click the "Submit" button and get the Drivers for that Team</p>
   <?php include 'action.php'; ?> 
-<?php include 'insert2.php'; ?>   
+ 
   </center>
 </body>
 </html>
