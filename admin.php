@@ -22,7 +22,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .form-popup {
   display: none;
   position: fixed;
-  bottom: 0;
+  bottom: 5px;
   right: 15px;
   border: 3px solid #f1f1f1;
   z-index: 9;
@@ -78,6 +78,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
    <body>
       <center>
          <h1>Edit and Delete in Database</h1>
+        <h2>Delete Database</h2>
          <button class="open-button" onclick="openForm()">Update Driver Information</button>
 <div class="form-popup" id="myForm">
          <form action="edit2.php" method="post">
