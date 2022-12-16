@@ -15,7 +15,7 @@ if ($conn->connect_error) {
   ?>
   <?php  
    $driveteam=  $_POST['Team1'];
-$sql = "SELECT DriverID, DriverName, Team, LastRaceWon from Driver Where Team = ( '$driveteam')" ;
+$sql = "SELECT DriverID, DriverName, Team, LastRaceWon from Driver Where Team = ('$driveteam')" ;
 $result2 = $conn->query($sql);
 
 if ($result2->num_rows > 0) {
