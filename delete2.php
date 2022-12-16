@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
- 
+  <left>
+        <a href="index.html">Return to the Home Page</a> 
+     </left>
 <head>
-    <title>Insert Page page</title>
+    <title>Delete Data</title>
 </head>
  
 <body>
