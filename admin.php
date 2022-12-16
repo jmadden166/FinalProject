@@ -5,7 +5,6 @@
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
-/* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
   background-color: #555;
   color: white;
@@ -71,7 +70,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
    <body>
       <center>
          <h1>Edit and Delete in Database</h1>
-         <button class="open-button" onclick="openForm()">Open Form</button>
+         <button class="open-button" onclick="openForm()">Update Driver Information</button>
 <div class="form-popup" id="myForm">
          <form action="edit2.php" method="post">
              
