@@ -15,6 +15,7 @@ if ($conn->connect_error) {
   ?>
   <?php  
  $help =  $_POST['Team1'];
+  <h1><center><?=$row['$help']?></h1></center>
 $sql = "SELECT DriverID, DriverName, Team, LastRaceWon from Driver where Team =  ('$help')";
 $result2 = $conn->query($sql);
 
@@ -22,7 +23,7 @@ if ($result2->num_rows > 0) {
   // output data of each row
   while($row = $result2->fetch_assoc()) {
     ?>
-  <h1><center><?=$row["Team"]?></h1></center>
+  
      <div class="card">
     <div class="card-body">
       <h5 class="card-title"><?=$row["DriverName"]?></h5>
