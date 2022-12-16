@@ -14,7 +14,6 @@
     <h1>Current Driver Lineup</h1>
 <a href="index.html">Return to the Home Page</a> 
   <body>
-<?php include 'drivers2.php'; ?>
-<?php include 'insert2.php'; ?>      
+<?php include 'drivers2.php'; ?> 
   </body>
   </html>
