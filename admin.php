@@ -78,6 +78,11 @@ body {font-family: Arial, Helvetica, sans-serif;}
    <body>
       <center>
          <h1>Edit and Delete in Database</h1>
+     </center>
+     <left>
+        <a href="index.html">Return to the Home Page</a> 
+     </left>
+       <center>
         <h2>Delete Database</h2>
          <button class="open-button" onclick="openForm()">Update Driver Information</button>
 <div class="form-popup" id="myForm">
