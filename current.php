@@ -3,6 +3,7 @@
 <body>
 <center>
 <h1>Drivers by Team for the 2022 Season</h1>
+  <title>Current Drivers</title>
   </center>
  <left>
         <a href="index.html">Return to the Home Page</a> 
