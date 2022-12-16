@@ -5,7 +5,7 @@
 <h1>Drivers for Team for the 2022 Season</h1>
 
 
-<form action="action.php">
+  <form method="post" action="action.php">
   <label for="Team">Choose a Team:</label>
   <select name="Team" id="Team">
     <option value="Red Bull Racing">Red Bull Racing</option>
