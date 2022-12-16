@@ -15,30 +15,20 @@ if ($conn->connect_error) {
   ?>
   <?php  
    $driveteam=  $_POST['Team1'];
-$sql = "SELECT DriverID, DriverName, Team, LastRaceWon from Driver";
+$sql = "SELECT DriverID, DriverName, Team, LastRaceWon from Driver Where Team = ('$driveteam')";
 $result2 = $conn->query($sql);
 
-if ($result2->num_rows > 0) {
-  // output data of each row
-  while($row = $result2->fetch_assoc()) {
-    ?>
-     <div class="card">
-    <div class="card-body">
-      <h5 class="card-title"><?=$row["DriverName"]?></h5>
-      <p class="card-text"><ul>
-<?php
-  
-    echo "<li>- Team: " . $row["Team"]. "</li><li>- Last Race Won: " .  $row["LastRaceWon"]. "</li>;
-   ?>
-      <br>
-         </ul></p>
-  </div>
-    </div>
-  <?php  
-  }
-} else {
-  echo "No results found";
-}
-$conn->close();
-?>
+        if(mysqli_query($conn, $sql)){
+            echo "<h3>Driver data stored in a database successfully."
+                . " Please browse your localhost php my admin"
+                . " to view the updated data</h3>";
+
+        } else{
+            echo "ERROR: Hush! Sorry $sql. "
+                . mysqli_error($conn);
+        }
+         
+        // Close connection
+        mysqli_close($conn);
+        ?>
 </html>
