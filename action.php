@@ -8,7 +8,6 @@
     float: left;
     width:  700px;
     height: 800px;
-    object-fit: cover;
 }
    </style>
   <?php
