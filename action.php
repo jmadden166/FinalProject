@@ -32,9 +32,11 @@ if ($result2->num_rows > 0) {
       <h5 class="card-title"><?=$row["DriverName"]?></h5>
       <p class="card-text"><ul>
 <?php
-  
-    echo "<li>Team: " . $row["Team"]. "</li><li>Last Race Won: " .  $row["LastRaceWon"]. "</li><li>Driver Image: "  <img src= " .$row["NumberOfRacesWonIn2022"]. " class="d-block w-100" alt="...">.   "</li>";
+  $url = .$row["Image"]. 
+    echo "<li>Team: " . $row["Team"]. "</li><li>Last Race Won: " .  $row["LastRaceWon"]. "</li><li>Driver Image: ?>"<img src="<?php echo $url; ?>" />   "</li>";
    ?>
+       
+
       <br>
          </ul></p>
   </div>
