@@ -10,10 +10,18 @@
             h1 {
                 text-align: center;
             }
+      <style>
+body {
+  background-color: #80ced6;
+}
+
   </style>
     <h1>Upcoming Races</h1>
 <a href="index.html">Return to the Home Page</a> 
+  <br>
+  <center>
   <body>
 <?php include 'races2.php'; ?> 
   </body>
+  </center>
   </html>
