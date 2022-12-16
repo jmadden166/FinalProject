@@ -24,7 +24,7 @@
 </form>
 
 <p>Click the "Submit" button and get the Drivers for that Team</p>
-
+<?php include 'insert2.php'; ?>   
 </body>
 </html>
 
