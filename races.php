@@ -10,7 +10,6 @@
             h1 {
                 text-align: center;
             }
-      <style>
 body {
   background-color: #80ced6;
 }
