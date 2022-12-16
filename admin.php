@@ -3,6 +3,9 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+  body {
+  background-color: #92a8d1;
+}
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 .open-button {
@@ -83,7 +86,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
         <a href="index.html">Return to the Home Page</a> 
      </left>
        <center>
-        <h2>Delete Driver from Database</h2>
+        <h2>Delete Data from Database</h2>
          <button class="open-button" onclick="openForm()">Update Driver Information</button>
 <div class="form-popup" id="myForm">
          <form action="edit2.php" method="post">
