@@ -30,7 +30,9 @@ if ($result2->num_rows > 0) {
   
      <div class="card">
     <div class="card-body">
-      <h5 class="card-title"><?=$row["DriverName"]?></h5>
+       <center>
+      <h2 class="card-title"><?=$row["DriverName"]?></h2>
+       </center>
       <p class="card-text"><ul>
 <?php
   $url = $row["ImageLink"];
