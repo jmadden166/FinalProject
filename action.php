@@ -15,7 +15,7 @@ if ($conn->connect_error) {
   ?>
   <?php  
  $help =  $_POST['Team1'];
-  <h1><center><?=$row['$help']?></h1></center>
+ 
 $sql = "SELECT DriverID, DriverName, Team, LastRaceWon from Driver where Team =  ('$help')";
 $result2 = $conn->query($sql);
 
