@@ -19,7 +19,7 @@ if ($conn->connect_error) {
   <?php  
  $help =  $_POST['Team1'];
  
-$sql = "SELECT DriverID, DriverName, Team, LastRaceWon from Driver where Team =  ('$help')";
+$sql = "SELECT Driver.DriverID, DriverName, Team, LastRaceWon, ImageLink from Driver join Image on Driver.DriverID = Image.DriverID where Team =  ('$help')";
 $result2 = $conn->query($sql);
 
 if ($result2->num_rows > 0) {
@@ -33,7 +33,7 @@ if ($result2->num_rows > 0) {
       <p class="card-text"><ul>
 <?php
   
-    echo "<li>Team: " . $row["Team"]. "</li><li>Last Race Won: " .  $row["LastRaceWon"]. "</li>";
+    echo "<li>Team: " . $row["Team"]. "</li><li>Last Race Won: " .  $row["LastRaceWon"]. "</li><li>Driver Image: "  <img src= .$row["NumberOfRacesWonIn2022"]. class="d-block w-100" alt="...">.   "</li>";
    ?>
       <br>
          </ul></p>
