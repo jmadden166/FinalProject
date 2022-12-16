@@ -111,8 +111,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <input type="submit" value="Submit">
             </form>
              </div>
-    <button class="open-button2" onclick="openForm()">Delete a Driver</button>
-<div class="form-popup2" id="myForm">
+   
          <form action="edit2.php" method="post">
              
  
