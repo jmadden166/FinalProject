@@ -13,7 +13,7 @@
 $username = "jackstra_Homework3";
 $password = "+JMx3n7)k+!H";
 $dbname = "jackstra_final";
-        $conn = mysqli_connect("localhost", "jackstra_Homework3", "+JMx3n7)k+!H", "jackstra_Homework4");
+        $conn = mysqli_connect("localhost", "jackstra_Homework3", "+JMx3n7)k+!H", "jackstra_final");
          
         // Check connection
         if($conn === false){
