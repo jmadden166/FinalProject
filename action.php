@@ -14,19 +14,31 @@ if ($conn->connect_error) {
 }
   ?>
   <?php  
-   $driveteam=  $_POST['Team1'];
-$sql = "SELECT *from Driver Where Team = ('$driveteam')";
+ 
+$sql = "SELECT DriverID, DriverName, Team, LastRaceWon, count(2022Races.WinningDriverID) as NumberOfRacesWonIn2022 from Driver join 2022Races ON Driver.DriverID = 2022Races.WinningDriverID group by DriverID, DriverName, Team, LastRaceWon";
 $result2 = $conn->query($sql);
 
-        if(mysqli_query($conn, $sql)){
-            echo "<li>- Team: " . $row["Team"]. "</li><li>- Last Race Won: " .  $row["LastRaceWon"]. "</li><li>- Races Won in 2022: " .  $row["NumberOfRacesWonIn2022"]. "</li>";
-
-        } else{
-            echo "ERROR: Hush! Sorry $sql. "
-                . mysqli_error($conn);
-        }
-         
-        // Close connection
-        mysqli_close($conn);
-        ?>
+if ($result2->num_rows > 0) {
+  // output data of each row
+  while($row = $result2->fetch_assoc()) {
+    ?>
+     <div class="card">
+    <div class="card-body">
+      <h5 class="card-title"><?=$row["DriverName"]?></h5>
+      <p class="card-text"><ul>
+<?php
+  
+    echo "<li>- Team: " . $row["Team"]. "</li><li>- Last Race Won: " .  $row["LastRaceWon"]. "</li><li>- Races Won in 2022: " .  $row["NumberOfRacesWonIn2022"]. "</li>";
+   ?>
+      <br>
+         </ul></p>
+  </div>
+    </div>
+  <?php  
+  }
+} else {
+  echo "0 results";
+}
+$conn->close();
+?>
 </html>
